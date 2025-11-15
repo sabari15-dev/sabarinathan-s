@@ -42,8 +42,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-32 relative px-4 md:px-8">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16 space-y-4">
           <p className="text-accent text-sm uppercase tracking-widest font-medium">
             Portfolio
