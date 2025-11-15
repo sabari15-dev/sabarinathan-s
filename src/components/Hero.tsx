@@ -11,8 +11,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      <div className="container mx-auto px-6">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 px-4 md:px-8">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">

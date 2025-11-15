@@ -3,8 +3,8 @@ import developerPortrait from "@/assets/developer-portrait.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-32 relative">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-32 relative px-4 md:px-8">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative lg:order-1 order-2">
             <div className="relative w-full max-w-md">

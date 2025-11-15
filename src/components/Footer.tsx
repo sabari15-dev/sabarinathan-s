@@ -4,8 +4,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t border-border">
-      <div className="container mx-auto px-6">
+    <footer className="py-12 border-t border-border px-4 md:px-8">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
