@@ -1,11 +1,11 @@
 import { GraduationCap, Briefcase, Code2 } from "lucide-react";
-import developerPortrait from "@/assets/developer-portrait.jpg";
+import developerPortrait from "@/assets/developer-portrait.png";
 
 const About = () => {
   return (
-    <section id="about" className="py-32 relative px-4 md:px-8">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-16 sm:py-24 lg:py-32 relative px-4 md:px-8">
+      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="relative lg:order-1 order-2">
             <div className="relative w-full max-w-md">
               <div className="absolute -inset-4 bg-accent/10 blur-2xl rounded-2xl"></div>
@@ -22,12 +22,12 @@ const About = () => {
               <p className="text-accent text-sm uppercase tracking-widest font-medium">
                 About Me
               </p>
-              <h2 className="text-5xl md:text-6xl font-bold">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                 Crafting Robust <span className="gradient-text">Backend Systems</span>
               </h2>
             </div>
 
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
                 I'm a Backend Developer with 2 years of experience specializing in building 
                 scalable and efficient server-side applications. My expertise lies in crafting 

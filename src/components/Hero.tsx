@@ -1,6 +1,6 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import developerPortrait from "@/assets/developer-portrait.jpg";
+import developerPortrait from "@/assets/developer-portrait.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -11,23 +11,23 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 px-4 md:px-8">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-12 px-4 md:px-8">
+      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
               <p className="text-accent text-sm uppercase tracking-widest font-medium">
                 Backend Developer
               </p>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight">
                 Sabarinathan<span className="text-accent">.</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-light">
                 Building scalable backend systems
               </h2>
             </div>
 
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
               2 years of experience crafting robust APIs, real-time collaboration systems, 
               and scalable backend architectures using Node.js, TypeScript, and MongoDB.
             </p>
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Button
                 onClick={() => scrollToSection("projects")}
-                className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-lg group"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg group"
               >
                 View Projects
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -43,7 +43,7 @@ const Hero = () => {
               <Button
                 onClick={() => scrollToSection("contact")}
                 variant="outline"
-                className="px-8 py-6 text-lg border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                className="px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg border-accent text-accent hover:bg-accent hover:text-accent-foreground"
               >
                 Contact Me
               </Button>
