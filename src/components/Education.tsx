@@ -2,13 +2,13 @@ import { GraduationCap, Award } from "lucide-react";
 
 const Education = () => {
   return (
-    <section id="education" className="py-32 relative px-4 md:px-8">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="text-center mb-16 space-y-4">
+    <section id="education" className="py-16 sm:py-24 lg:py-32 relative px-4 md:px-8">
+      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
           <p className="text-accent text-sm uppercase tracking-widest font-medium">
             Academic Background
           </p>
-          <h2 className="text-5xl md:text-6xl font-bold">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             Education & <span className="gradient-text">Certifications</span>
           </h2>
         </div>

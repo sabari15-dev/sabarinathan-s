@@ -42,16 +42,16 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-32 relative px-4 md:px-8">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="text-center mb-16 space-y-4">
+    <section id="projects" className="py-16 sm:py-24 lg:py-32 relative px-4 md:px-8">
+      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
           <p className="text-accent text-sm uppercase tracking-widest font-medium">
             Portfolio
           </p>
-          <h2 className="text-5xl md:text-6xl font-bold">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
             Real-world backend solutions demonstrating scalability and performance
           </p>
         </div>
