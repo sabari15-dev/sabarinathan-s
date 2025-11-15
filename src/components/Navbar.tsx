@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import { Code2, Menu, X } from "lucide-react";
+import { Code2, Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,6 +62,13 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
               </button>
             ))}
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="w-9 h-9 rounded-full hover:bg-secondary transition-colors flex items-center justify-center"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-accent text-accent-foreground hover:bg-accent/90"
@@ -90,6 +99,22 @@ const Navbar = () => {
                   {link.name}
                 </button>
               ))}
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="flex items-center gap-2 text-left text-sm font-medium hover:text-accent transition-colors py-2"
+              >
+                {theme === "dark" ? (
+                  <>
+                    <Sun size={18} />
+                    <span>Light Mode</span>
+                  </>
+                ) : (
+                  <>
+                    <Moon size={18} />
+                    <span>Dark Mode</span>
+                  </>
+                )}
+              </button>
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-accent text-accent-foreground hover:bg-accent/90 w-full"
