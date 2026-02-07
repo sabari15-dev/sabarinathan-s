@@ -54,7 +54,7 @@ const About = () => {
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
                   <Code2 className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold">15+</h3>
+                <h3 className="text-2xl font-bold">5</h3>
                 <p className="text-sm text-muted-foreground">Projects Completed</p>
               </div>
 

@@ -22,7 +22,7 @@ const Education = () => {
               
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold mb-2">Bachelor of Science in Mathematics</h3>
-                <p className="text-accent font-medium mb-4">University Name • 2019 - 2022</p>
+                <p className="text-accent font-medium mb-4">madurai kamaraj university • 2019 - 2022</p>
                 
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Graduated with strong foundation in logical thinking, analytical reasoning, 

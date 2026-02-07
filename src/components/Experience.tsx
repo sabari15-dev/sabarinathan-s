@@ -1,32 +1,41 @@
 import { Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
-  const experiences = [
-    {
-      year: "2023 - Present",
-      title: "Senior Backend Developer",
-      company: "Tech Innovations Ltd",
-      location: "Remote",
-      description: "Leading backend architecture for real-time collaboration platforms. Implementing CRDT systems with Yjs, optimizing MongoDB queries, and scaling Socket.IO infrastructure.",
-      achievements: [
-        "Reduced API response time by 40% through query optimization",
-        "Architected real-time collaboration system handling 10k+ concurrent users",
-        "Mentored junior developers on backend best practices",
-      ],
-    },
-    {
-      year: "2022 - 2023",
-      title: "Backend Developer",
-      company: "StartupHub Tech",
-      location: "Bangalore, India",
-      description: "Developed and maintained RESTful APIs, implemented authentication systems, and designed database schemas for multiple SaaS products.",
-      achievements: [
-        "Built complete backend for 3 production applications",
-        "Implemented JWT-based authentication system",
-        "Designed and optimized MongoDB schemas reducing storage by 30%",
-      ],
-    },
-  ];
+const experiences = [
+  {
+    year: "Feb 2024 – Present",
+    title: "Backend Developer",
+    company: "HEXR FACTORY IMMERSIVE TECH PVT LTD",
+    location: "India",
+    description:
+      "Building scalable, high-performance backend systems using Node.js, TypeScript, Express.js, and Socket.IO, with a strong focus on real-time communication, system reliability, and performance optimization.",
+    achievements: [
+      "Designed and developed production-grade REST APIs and real-time communication modules",
+      "Optimized MongoDB schemas, queries, and indexes to resolve large-scale database performance issues",
+      "Improved API response time through efficient query optimization, indexing, and caching strategies",
+      "Handled high-concurrency real-time traffic using Socket.IO with optimized event broadcasting",
+      "Implemented Redis caching for faster data access, session management, and application-level performance improvements",
+      "Managed large file and asset storage using MinIO, including 3D models and application assets",
+      "Enhanced system reliability through robust error handling, logging, monitoring, and performance tuning",
+      "Collaborated closely with frontend, QA, and product teams to deliver stable and maintainable backend services",
+      "Supported deployment workflows and worked in Linux-based production environments",
+    ],
+  },
+  {
+    year: "Dec 2023 – Feb 2024",
+    title: "Software Developer Trainee",
+    company: "HEXR FACTORY IMMERSIVE TECH PVT LTD",
+    location: "India",
+    description:
+      "Worked as a backend developer trainee, contributing to API development, database operations, and gaining hands-on experience with production-level backend workflows.",
+    achievements: [
+      "Assisted in backend API development using Node.js and Express.js",
+      "Worked on MongoDB schema design and CRUD operations",
+      "Supported debugging, testing, and enhancement of existing backend modules",
+      "Learned production-level coding standards, version control practices, and team collaboration workflows",
+    ],
+  },
+];
 
   return (
     <section id="experience" className="py-16 sm:py-24 lg:py-32 relative px-4 md:px-8">
