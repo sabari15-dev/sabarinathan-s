@@ -1,41 +1,41 @@
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 const Experience = () => {
-const experiences = [
-  {
-    year: "Feb 2024 – Present",
-    title: "Backend Developer",
-    company: "HEXR FACTORY IMMERSIVE TECH PVT LTD",
-    location: "India",
-    description:
-      "Building scalable, high-performance backend systems using Node.js, TypeScript, Express.js, and Socket.IO, with a strong focus on real-time communication, system reliability, and performance optimization.",
-    achievements: [
-      "Designed and developed production-grade REST APIs and real-time communication modules",
-      "Optimized MongoDB schemas, queries, and indexes to resolve large-scale database performance issues",
-      "Improved API response time through efficient query optimization, indexing, and caching strategies",
-      "Handled high-concurrency real-time traffic using Socket.IO with optimized event broadcasting",
-      "Implemented Redis caching for faster data access, session management, and application-level performance improvements",
-      "Managed large file and asset storage using MinIO, including 3D models and application assets",
-      "Enhanced system reliability through robust error handling, logging, monitoring, and performance tuning",
-      "Collaborated closely with frontend, QA, and product teams to deliver stable and maintainable backend services",
-      "Supported deployment workflows and worked in Linux-based production environments",
-    ],
-  },
-  {
-    year: "Dec 2023 – Feb 2024",
-    title: "Software Developer Trainee",
-    company: "HEXR FACTORY IMMERSIVE TECH PVT LTD",
-    location: "India",
-    description:
-      "Worked as a backend developer trainee, contributing to API development, database operations, and gaining hands-on experience with production-level backend workflows.",
-    achievements: [
-      "Assisted in backend API development using Node.js and Express.js",
-      "Worked on MongoDB schema design and CRUD operations",
-      "Supported debugging, testing, and enhancement of existing backend modules",
-      "Learned production-level coding standards, version control practices, and team collaboration workflows",
-    ],
-  },
-];
+  const experiences = [
+    {
+      year: "May 2026 – Present",
+      title: "Backend Developer",
+      company: "Aalai Immersive Tech",
+      description:
+        "Backend development for multi-tenant systems, real-time communication, and CI/CD automation.",
+      achievements: [
+        "Developed RESTful APIs using Node.js, Express.js, and TypeScript.",
+        "Designed and optimized MongoDB schemas, indexes, and queries.",
+        "Implemented JWT authentication, bcrypt password hashing, and RBAC.",
+        "Developed multi-tenant authentication and tenant isolation mechanisms.",
+        "Integrated Socket.IO for real-time communication.",
+        "Managed MinIO object storage and file upload workflows.",
+        "Developed a dedicated CI/CD Automation Service integrating Jenkins, Gitea webhooks, Harbor, Argo CD, and Kubernetes.",
+        "Independently developed an MCP server that exposes Service Registry REST APIs as tools accessible to LLMs.",
+      ],
+    },
+    {
+      year: "February 2024 – April 2026",
+      title: "Software Developer",
+      company: "Hexr Factory Immersive Tech",
+      description:
+        "Backend application development, independent services, and automated service provisioning.",
+      achievements: [
+        "Developed RESTful backend services using Node.js, Express.js, and TypeScript with MVC architecture.",
+        "Designed MongoDB schemas and indexes for efficient data access.",
+        "Implemented JWT authentication, bcrypt, HTTP-only cookies, and RBAC.",
+        "Integrated Socket.IO for real-time communication.",
+        "Managed MinIO and Blob Storage file workflows.",
+        "Developed an automated Service Creation workflow that provisions backend services when new projects are created through the application.",
+        "Integrated Gitea to automatically create repositories and push the generated application code.",
+      ],
+    },
+  ];
 
   return (
     <section id="experience" className="py-16 sm:py-24 lg:py-32 relative px-4 md:px-8">
@@ -62,10 +62,6 @@ const experiences = [
                   <span className="px-4 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
                     {exp.year}
-                  </span>
-                  <span className="text-muted-foreground text-sm flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    {exp.location}
                   </span>
                 </div>
 

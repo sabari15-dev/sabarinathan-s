@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import developerPortrait from "@/assets/developer-portrait.png";
 
@@ -16,20 +16,22 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
-              <p className="text-accent text-sm uppercase tracking-widest font-medium">
-                Backend Developer
+              <p className="text-accent text-xs sm:text-sm uppercase tracking-widest font-medium">
+                Backend Developer | Node.js | TypeScript | Backend Systems
               </p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight">
-                Sabarinathan<span className="text-accent">.</span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Sabarinathan <span className="text-accent">Sundaram</span>
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-light">
-                Building scalable backend systems
+                Building scalable, secure server-side applications
               </h2>
             </div>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-              2 years of experience crafting robust APIs, real-time collaboration systems, 
-              and scalable backend architectures using Node.js, TypeScript, and MongoDB.
+              Backend Developer with 2 years and 8 months of experience building backend applications
+              using Node.js, Express.js, TypeScript, and MongoDB. Experienced in REST API development,
+              authentication, RBAC, multi-tenant architecture, real-time communication, service
+              automation, CI/CD workflows, MCP server development, and backend troubleshooting.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -51,23 +53,17 @@ const Hero = () => {
 
             <div className="flex gap-4 pt-4">
               <a
-                href="https://github.com"
+                href="https://www.linkedin.com/in/sabarinathan-s-1bb937259"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-accent hover:text-accent transition-colors"
-              >
-                <Github className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-accent hover:text-accent transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:sabari@example.com"
+                href="mailto:sabarinathan978823@gmail.com"
+                aria-label="Email"
                 className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-accent hover:text-accent transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -89,8 +85,8 @@ const Hero = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+      <div className="pointer-events-none absolute top-1/4 right-1/4 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+      <div className="pointer-events-none absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
     </section>
   );
 };

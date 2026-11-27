@@ -1,36 +1,41 @@
-import { Database, Code2, Server, GitBranch, Layers, Zap } from "lucide-react";
+import { Bot, Cloud, Code2, Database, HardDrive, Server, Shield } from "lucide-react";
 
 const Skills = () => {
   const skills = [
     {
       icon: Code2,
       category: "Languages",
-      items: ["TypeScript", "JavaScript", "Node.js"],
+      items: ["JavaScript", "TypeScript", "Python (Basic)", "Java (Basic)"],
     },
     {
       icon: Server,
-      category: "Frameworks",
-      items: ["Express.js", "Socket.IO", "REST APIs"],
+      category: "Backend Development",
+      items: ["Node.js", "Express.js", "RESTful APIs", "Microservices Architecture", "MVC Architecture", "Socket.IO", "Multi-tenancy", "Backend Troubleshooting", "Debugging", "Root Cause Analysis"],
+    },
+    {
+      icon: Bot,
+      category: "Backend / AI Integration",
+      items: ["Model Context Protocol (MCP)", "MCP Server Development", "LLM Tool Integration"],
     },
     {
       icon: Database,
-      category: "Databases",
-      items: ["MongoDB", "Mongoose", "Redis"],
+      category: "Databases & ORM",
+      items: ["MongoDB", "Redis", "PostgreSQL", "Prisma ORM", "DynamoDB"],
     },
     {
-      icon: Zap,
-      category: "Real-time",
-      items: ["Socket.IO", "Yjs", "WebSockets"],
+      icon: Shield,
+      category: "Security",
+      items: ["JWT Authentication", "bcrypt", "Role-Based Access Control (RBAC)", "Rate Limiting", "CORS", "Request Validation"],
     },
     {
-      icon: Layers,
-      category: "Architecture",
-      items: ["Microservices", "MVC", "RESTful"],
+      icon: Cloud,
+      category: "DevOps & Cloud",
+      items: ["Docker", "Jenkins", "Kubernetes", "Argo CD", "Harbor", "CI/CD", "AWS", "AWS Lambda", "API Gateway"],
     },
     {
-      icon: GitBranch,
-      category: "Tools",
-      items: ["Git", "GitHub", "Docker"],
+      icon: HardDrive,
+      category: "Storage & Tools",
+      items: ["MinIO", "Blob Storage", "Git", "GitHub", "Gitea", "Linux"],
     },
   ];
 

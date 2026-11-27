@@ -20,7 +20,7 @@ const About = () => {
           <div className="space-y-8 lg:order-2 order-1">
             <div className="space-y-4">
               <p className="text-accent text-sm uppercase tracking-widest font-medium">
-                About Me
+                About Sabarinathan
               </p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                 Crafting Robust <span className="gradient-text">Backend Systems</span>
@@ -29,15 +29,22 @@ const About = () => {
 
             <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
-                I'm a Backend Developer with 2 years of experience specializing in building 
-                scalable and efficient server-side applications. My expertise lies in crafting 
-                robust APIs, designing complex database architectures, and implementing real-time 
-                collaboration systems.
+                I build backend applications through RESTful API design, authentication and
+                authorization, and multi-tenant architecture. My experience includes microservices,
+                service integration, database design and optimization, and real-time communication.
               </p>
               <p>
-                With a strong foundation in mathematics and a passion for problem-solving, 
-                I approach backend development with analytical precision and attention to detail. 
-                I thrive on creating systems that are not just functional, but elegant and maintainable.
+                I also develop service automation workflows and CI/CD solutions to simplify backend
+                service provisioning and deployment.
+              </p>
+              <p>
+                I have hands-on experience identifying, debugging, and resolving backend issues
+                across different application modules. I focus on understanding root causes and
+                implementing reliable fixes.
+              </p>
+              <p>
+                I independently developed an MCP server that exposes Service Registry REST APIs as
+                tools accessible to Large Language Models (LLMs).
               </p>
             </div>
 
@@ -46,16 +53,16 @@ const About = () => {
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
                   <Briefcase className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold">2+</h3>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
+                <h3 className="text-xl font-bold leading-tight">2 Years 8 Months</h3>
+                <p className="text-sm text-muted-foreground">Experience</p>
               </div>
 
               <div className="space-y-2">
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
                   <Code2 className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold">5</h3>
-                <p className="text-sm text-muted-foreground">Projects Completed</p>
+                <h3 className="text-2xl font-bold">2</h3>
+                <p className="text-sm text-muted-foreground">Companies</p>
               </div>
 
               <div className="space-y-2">

@@ -1,42 +1,39 @@
-import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
 const Projects = () => {
   const projects = [
     {
-      title: "3D Asset Collaboration System",
-      description: "Real-time multi-user 3D editing platform with Yjs CRDT, Socket.IO, auto-save, undo/redo functionality, and MongoDB persistence.",
-      tags: ["Node.js", "Socket.IO", "Yjs", "MongoDB", "Express"],
+      title: "Digital Twin Platform",
+      description:
+        "Backend for a digital twin platform that represents real-world assets and provides real-time status updates.",
+      result:
+        "Developed RESTful APIs and backend data models, implemented real-time communication with Socket.IO, worked on MongoDB schema design and data management, and supported backend workflows for asset monitoring. Confidential company project.",
+      tags: ["Node.js", "Express.js", "TypeScript", "MongoDB", "Socket.IO"],
       gradient: "from-accent/20 to-accent/5",
     },
     {
-      title: "Collaborative Drawing App",
-      description: "Multi-user drawing application with real-time line synchronization, auto-saving, snapshot management, and conflict-free collaborative editing.",
-      tags: ["TypeScript", "Yjs", "WebSocket", "Canvas API"],
+      title: "Milestone and Task Management System",
+      description:
+        "Backend system for managing project milestones and tasks across multiple organizations.",
+      result:
+        "Developed REST APIs for milestone and task management, implemented JWT authentication and RBAC, and built multi-tenant architecture with tenant data isolation for organization-specific access. Confidential company project.",
+      tags: ["Node.js", "Express.js", "TypeScript", "MongoDB", "JWT", "RBAC"],
       gradient: "from-accent/20 to-accent/5",
     },
     {
-      title: "QR Code Attendance System",
-      description: "Complete attendance management system with TypeScript backend, Mongoose ODM, automated report generation, and monthly QR code viewer.",
-      tags: ["TypeScript", "MongoDB", "Express", "QR Generation"],
+      title: "CI/CD Automation",
+      description:
+        "Automated application build and deployment workflows.",
+      result:
+        "Automated build and deployment workflows, integrated Jenkins and Gitea webhooks, managed Docker image builds and Harbor, and maintained Dockerfiles, Jenkins pipelines, and Kubernetes manifests for Argo CD and Kubernetes deployments. Contribution at Aalai Immersive Tech.",
+      tags: ["Docker", "Jenkins", "Gitea", "Harbor", "Argo CD", "Kubernetes"],
       gradient: "from-accent/20 to-accent/5",
     },
     {
-      title: "IoT Data Logging System",
-      description: "Scalable IoT device data ingestion platform with real-time dashboard, MongoDB aggregation pipeline, and comprehensive analytics.",
-      tags: ["Node.js", "MongoDB", "IoT", "Real-time"],
-      gradient: "from-accent/20 to-accent/5",
-    },
-    {
-      title: "URL Shortener with Analytics",
-      description: "Advanced URL shortening service with click tracking, link expiration, device statistics, and comprehensive analytics dashboard.",
-      tags: ["Express", "MongoDB", "Analytics", "REST API"],
-      gradient: "from-accent/20 to-accent/5",
-    },
-    {
-      title: "Backend CLI Auto-Generator",
-      description: "Developer tool that auto-generates models, services, controllers, and routes from schema definitions to accelerate backend development.",
-      tags: ["Node.js", "CLI", "Code Generation", "Templates"],
+      title: "OTS Travel – Corporate Travel Management Portal",
+      description:
+        "Corporate travel management platform that helps companies manage employee bookings, corporate travel policies, and travel expenses.",
+      result:
+        "Integrated third-party flight booking APIs, implemented employee booking controls and corporate travel policy management, worked on Master Wallet management and automated refund workflows, and developed GST invoicing and corporate expense management. Company project.",
+      tags: ["Node.js", "TypeScript", "AWS Lambda", "AWS API Gateway", "DynamoDB", "Third-party API Integration"],
       gradient: "from-accent/20 to-accent/5",
     },
   ];
@@ -52,11 +49,11 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Real-world backend solutions demonstrating scalability and performance
+            Selected backend work, including confidential company projects and OTS Travel.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={project.title}
@@ -66,16 +63,19 @@ const Projects = () => {
               }}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-50`}></div>
-              
+
               <div className="relative p-8 bg-card border border-border rounded-2xl h-full flex flex-col">
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
-                <div className="flex flex-wrap gap-2 mb-6">
+                <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
+                  {project.result}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -84,25 +84,6 @@ const Projects = () => {
                       {tag}
                     </span>
                   ))}
-                </div>
-
-                <div className="flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-accent text-accent hover:bg-accent hover:text-accent-foreground flex items-center gap-2"
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-accent text-accent hover:bg-accent hover:text-accent-foreground flex items-center gap-2"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Demo
-                  </Button>
                 </div>
               </div>
             </div>
