@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# Sabarinathan Sundaram
 
-## Project info
+Personal portfolio for Sabarinathan Sundaram, a Backend Developer. The site is a React application. Ask Sabari is a separate API that answers questions from the portfolio.
 
-**URL**: https://lovable.dev/projects/5659fa62-a413-43f3-a7d2-1c7dbbdb958e
+## Stack
 
-## How can I edit this code?
+- React, TypeScript, Vite, and Tailwind CSS
+- Node.js, Express, and TypeScript for the Ask Sabari API
 
-There are several ways of editing your application.
+## Run locally
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/5659fa62-a413-43f3-a7d2-1c7dbbdb958e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Frontend:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site runs at http://localhost:8080.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+API, from the `backend` folder:
 
-**Use GitHub Codespaces**
+```sh
+npm install
+npm run dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The API runs at http://localhost:5000. Copy `backend/.env.example` to `backend/.env` and set `OPENROUTER_API_KEY` there. Do not commit `.env`.
 
-## What technologies are used for this project?
+## Production
 
-This project is built with:
+Frontend build:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```sh
+npm run build
+```
 
-## How can I deploy this project?
+Set `VITE_API_BASE_URL` to the public API origin before building for production.
 
-Simply open [Lovable](https://lovable.dev/projects/5659fa62-a413-43f3-a7d2-1c7dbbdb958e) and click on Share -> Publish.
+API:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+npm run build
+npm start
+```
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Set `PORT`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, and `CORS_ORIGIN` on the API host. `CORS_ORIGIN` must include the exact site origin, including `https`.
